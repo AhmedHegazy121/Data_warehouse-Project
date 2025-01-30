@@ -68,7 +68,7 @@ data_warehouse_project/
 ---
 
 ## Documentation
-Refer to the [documentation](/https://github.com/AhmedHegazy121/Data_warehouse-Project/tree/main/docs/) folder for detailed information on:
+Refer to the documentatio nfolder for detailed information on:
 - Data model design
 - ETL process
 - SQL queries for analytics
