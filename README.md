@@ -51,7 +51,7 @@ This integration model helps in linking Sales, Customer, and Product data for be
 
 ![](docs/Architecture-integration.png)
 
-- **This Integration Model illustrates the relationships between Sales, Products, and Customers in a CRM and ERP system.**
+- This Integration Model illustrates the relationships between Sales, Products, and Customers in a CRM and ERP system.
 
  Sales transactions (Crm_Sales_details) link to Product Information (crm_prd_info) and Customer Details (crm_prd_info & erp_loc_a101). 
 Additionally, products are categorized in erp_px_cat_g1v2, while customer location and extra details like birthdates are stored in related tables for enhanced business analysis.
