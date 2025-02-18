@@ -33,13 +33,27 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 ---
 # Data Architecture
-The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
+The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers.
+
+
 ![](docs/Architecture-High.png)
+
+
 1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server
 Database.
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for
 analysis.
 3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+-----
+# Integration Model (how to tables are related)
+This integration model helps in linking Sales, Customer, and Product data for better analysis and business intelligence.
+
+
+![](docs/Architecture-integration.png)
+
+This Integration Model illustrates the relationships between Sales, Products, and Customers in a CRM and ERP system.
+Sales transactions (Crm_Sales_details) link to Product Information (crm_prd_info) and Customer Details (crm_prd_info & erp_loc_a101). 
+Additionally, products are categorized in erp_px_cat_g1v2, while customer location and extra details like birthdates are stored in related tables for enhanced business analysis.
 
 ## Repository Structure
 ```
