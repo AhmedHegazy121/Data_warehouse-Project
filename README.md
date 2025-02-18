@@ -52,6 +52,7 @@ This integration model helps in linking Sales, Customer, and Product data for be
 ![](docs/Architecture-integration.png)
 
 - **This Integration Model illustrates the relationships between Sales, Products, and Customers in a CRM and ERP system.**
+
  Sales transactions (Crm_Sales_details) link to Product Information (crm_prd_info) and Customer Details (crm_prd_info & erp_loc_a101). 
 Additionally, products are categorized in erp_px_cat_g1v2, while customer location and extra details like birthdates are stored in related tables for enhanced business analysis.
 ------
@@ -63,6 +64,16 @@ Additionally, products are categorized in erp_px_cat_g1v2, while customer locati
 
 
 This Data Flow Diagram illustrates a structured ETL pipeline with three layers: Bronze, Silver, and Gold. Data is ingested from CRM and ERP sources into the Bronze layer, then refined and standardized in the Silver layer before being transformed into fact_sales, dim_customers, and dim_products in the Gold layer. The Gold layer serves as the final analytics-ready model for business intelligence and reporting.
+----
+# Sales Data Warehouse Schema: Star Schema Model for Analytics
+![](docs/Architecture-Data.png)
+This dimensional model represents a star schema for sales analytics, consisting of a fact table (gold.fact_sales) and two dimension tables (gold.dim_customers and gold.dim_products).
+
+The fact_sales table stores transactional data, including order details, sales amount, quantity, and price, while the dimension tables provide descriptive attributes for customers and products.
+
+The sales amount is calculated using the formula:
+Sales = Quantity × Price, making it a key metric for business insights and reporting.
+
 ## Repository Structure
 ```
 data_warehouse_project/
