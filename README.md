@@ -63,8 +63,9 @@ Additionally, products are categorized in erp_px_cat_g1v2, while customer locati
 
 ![](docs/Data_Flow_Diagram.png)
 
-
 This Data Flow Diagram illustrates a structured ETL pipeline with three layers: Bronze, Silver, and Gold. Data is ingested from CRM and ERP sources into the Bronze layer, then refined and standardized in the Silver layer before being transformed into fact_sales, dim_customers, and dim_products in the Gold layer. The Gold layer serves as the final analytics-ready model for business intelligence and reporting.
+
+
 ----
 # Sales Data Warehouse Schema: Star Schema Model for Analytics
 ![](docs/Architecture-Data.png)
