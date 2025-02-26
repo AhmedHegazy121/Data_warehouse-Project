@@ -28,7 +28,7 @@
 
 
     -- Explore All Columns in the Database
-	Select * From  INFORMATION_SCHEMA.COLUMNS
+Select * From  INFORMATION_SCHEMA.COLUMNS
 
 
 
@@ -43,10 +43,10 @@
 
 
 -- Explore All Countries our customers come  from
-	Select DISTINCT country FROM gold.dim_customers
+Select DISTINCT country FROM gold.dim_customers
 	
 -- Explore all Categories ' the major Divisions'
-	Select DISTINCT category,subcategory,product_name FROM gold.dim_products
+Select DISTINCT category,subcategory,product_name FROM gold.dim_products
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
